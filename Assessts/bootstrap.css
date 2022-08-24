@@ -1,0 +1,26 @@
+.align{
+    text-align: center;
+    background-color: #6c757da8;
+    margin-top: 20px;
+}
+.grid{
+    border: 1px solid aliceblue;
+    
+}
+.col{
+    background-color: #1604b3a8;
+    
+}
+.row{
+    
+    min-height: 400px;
+  
+    justify-content: center;
+}
+div.col-5.bg-success{
+    margin-bottom: 0;
+}
+div.col.bg,div.col-5.bg-success {
+    padding-top: 45px;
+    text-overflow: clip;
+}
