@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           
+            width: 100%;
+            background-color: #4f586026;
+            text-decoration: none;
+            
+
+        }
+        .alertbox{
+            border: none;
+            padding-left: 0;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .button{
+            margin-top: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="container">
+                <a href="./NavBar.html" class="navbar-brand">
+                    <img src="https://getbootstrap.com//docs/5.0/assets/brand/bootstrap-logo.svg" alt="logo" width="40"
+                        height="30" loading="lazy" class="d-inline-block align-top">Bootstrap Learning
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mytext"
+                    aria-controls="mytext" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="mytext">
+                    <ul class="navbar-nav justify-content-center">
+                        <li class="nav-item"><a href="./NavBar.html" class="nav-link text-white"><i style="font-size:19px" class="fa">&#xf015;</i> Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle text-white " id='navbarDropdown' role="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Courses</a>
+                            <div class="dropdown-menu bg-dark  dropdown-hover" area-labelledby="navbarDropdown">
+                                <a class="dropdown-item text-white" href="./MenuBar-bootstrap/Course.html">Bootstrap</a>
+                                <a class="dropdown-item text-white" href="./MenuBar-bootstrap//testing.html">Bootstrap-2</a>
+                                <a class="dropdown-item text-white" href="">Bootstrap-3</a>
+                                <a class="dropdown-item text-white" href="">Bootstrap-4</a>
+                            </div>  
+                        </li>
+                        <li class="nav-item"><a href="./about.html" class="nav-link text-white">About</a></li>
+                        <li class="nav-item"><a href="../Bootstrap/MenuBar-bootstrap/blog.html" class="nav-link text-white">Blog</a></li>
+                        <li class="nav-item"><a href="./Bootstrap.html" class="nav-link text-white">Contact Us</a></li>
+
+                    </ul>
+                    <form class="d-flex">
+                        <input type="text" placeholder="search..." class="form-control me-2">
+                        <button type="submit" class="btn btn-success">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Button Collapse Frequently Asked question -->
+        <hr class="my-5">
+        <div class="container" id="accordion">
+            <h4>Frequently Asked question</h4>
+            <p>Have a Doubt? Clear yourself by clicking the respective question below</p>
+            <div class="card">
+                <div class="card-header bg-warning">
+                    <a href="#question1" class="card-link text-decoration-none text-white" data-bs-toggle="collapse">
+                        What is HTML?
+                    </a>
+                </div>
+                <!-- Answer1 -->
+                <div id="question1" class="collapse" data-parent="accordion">
+                    <div class="card-body">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea nulla sit voluptatem earum architecto atque, accusamus eaque officia nesciunt quis similique odit, quas numquam explicabo! Iure totam fugit sed sint!
+                    </div>
+                </div>
+            </div>
+            <!-- Question2 -->
+            <div class="card">
+                <div class="card-header bg-warning">
+                    <a href="#question2" class="card-link text-decoration-none text-white" data-bs-toggle="collapse">
+                        What is CSS?
+                    </a>
+                </div>
+                <!-- Answer1 -->
+                <div id="question2" class="collapse" data-parent="accordion">
+                    <div class="card-body">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea nulla sit voluptatem earum architecto atque, accusamus eaque officia nesciunt quis similique odit, quas numquam explicabo! Iure totam fugit sed sint!
+                    </div>
+                </div>
+            </div>
+            <!-- Question3 -->
+            <div class="card">
+                <div class="card-header bg-warning">
+                    <a href="#question3" class="card-link text-decoration-none text-white" data-bs-toggle="collapse">
+                        What is Java Script?
+                    </a>
+                </div>
+                <!-- Answer1 -->
+                <div id="question3" class="collapse" data-parent="accordion">
+                    <div class="card-body">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea nulla sit voluptatem earum architecto atque, accusamus eaque officia nesciunt quis similique odit, quas numquam explicabo! Iure totam fugit sed sint!
+                    </div>
+                </div>
+            </div>
+            <!-- Question 4 -->
+            <div class="card">
+                <div class="card-header bg-warning">
+                    <a href="#question4" class="card-link text-decoration-none text-white" data-bs-toggle="collapse">
+                        What is Java Script?
+                    </a>
+                </div>
+                <!-- Answer1 -->
+                <div id="question4" class="collapse" data-parent="accordion">
+                    <div class="card-body">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea nulla sit voluptatem earum architecto atque, accusamus eaque officia nesciunt quis similique odit, quas numquam explicabo! Iure totam fugit sed sint!
+                    </div>
+                </div>
+            </div>
+            <!-- Quetion 5 -->
+            <div class="card">
+                <div class="card-header bg-warning">
+                    <a href="#question5" class="card-link text-decoration-none text-white" data-bs-toggle="collapse">
+                        What is React JS?
+                    </a>
+                </div>
+                <!-- Answer1 -->
+                <div id="question5" class="collapse" data-parent="accordion">
+                    <div class="card-body">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea nulla sit voluptatem earum architecto atque, accusamus eaque officia nesciunt quis similique odit, quas numquam explicabo! Iure totam fugit sed sint!
+                    </div>
+                </div>
+            </div>
+            <!-- Question 6 -->
+            <div class="card">
+                <div class="card-header bg-warning">
+                    <a href="#question6" class="card-link text-decoration-none text-white" data-bs-toggle="collapse">
+                        What is Redux?
+                    </a>
+                </div>
+                <!-- Answer1 -->
+                <div id="question6" class="collapse" data-parent="accordion">
+                    <div class="card-body">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea nulla sit voluptatem earum architecto atque, accusamus eaque officia nesciunt quis similique odit, quas numquam explicabo! Iure totam fugit sed sint!
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+     
+
+     
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
