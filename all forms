@@ -1,0 +1,137 @@
+<!-- Horizontal form -->
+
+ <div class="container">
+    <div class="row">
+        <div class="col-sm-5 mx-auto">
+            <div class="card">
+                <div class="card-body">
+                    <form action="" method="post" id="form2" class="needs-validation" novalidate>
+                        <div class="form-group my-3">
+                            <label for="email">Email</label> 
+                                <div class="input-group">   
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text fa fa-envelope" id="email" ></span>
+                                    </div>                         
+                                <input type="email" name="email" id="email" class="form-control" aria-describedby="email" required >
+                                 
+                                 <div class="invalid-feedback">Invalid Email</div>
+                            </div>
+                        </div>
+                        <div class="form-group my-3">
+                            
+                            <label for="pwd" >Password</label>  
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text fa fa-key"></span>
+                                </div>
+                                <input type="password" name="pwd" id="pwd" class='form-control' required>  
+                            </div>
+                        </div>
+                        <div class=" my-3">
+                                <div class="form-check">
+                                    <input type="checkbox" name="terms" id="terms" class="form-check-input">
+                                    <label for="terms" class="form-check-label">Save credentials</label>
+                                </div>
+                            </div>
+                                <div class="form-group my-3 d-block">
+                                    <button type="submit" class="btn btn-primary w-100" style="display:block;">
+                                       <span class="fa fa-unlock-alt"></span> Submit</button>
+                                </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="contianer my-2 text-center">
+            <small>Don't have an account?
+                <a href="#">register now</a>
+            </small>
+        </div>
+    </div>
+ </div>
+
+<!-- JS code for form -->
+<script>
+        (() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+    </script>
+    
+   <!-- Register form -->
+
+ <div class="container">
+    <div class="card-body">
+        <form action="">
+            <div class="row text-center">
+                <div class="col-sm-6 mx-auto">
+                    <div class="form-group text-center">
+                        <label for="name">Full Name</label>
+                        <input type="text" class="form-control" id="name" required name="name" placeholder="John smith">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Split mobile and email -->
+            <div class="row my-5">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="mbl">Mobile Number</label>
+                        <input type="number" name="mbl" id="mbl" class="form-control" placeholder="9XXXXXXX">
+                        <small class="text-muted">Mobile Number will not be disclosed to anyone</small>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" class="form-control" required placeholder="johnsmith@gmail.com">
+                    </div>
+                </div>
+            </div>
+            <!-- split password and confirm password -->
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="pwd">Password</label>
+                        <input type="password" name="pwd" id="pwd" class="form-control" required placeholder="password">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="cpwd">Confirm Password</label>
+                        <input type="password" name="cpwd" id="cpwd" class="form-control" required placeholder="confirm password">
+                    </div>
+                </div>
+            
+            </div>
+            <div class="form-group form-check my-2">
+                    
+                        <input type="checkbox" class="form-check-input" name="terms" id="terms">
+                        <label for="terms" class="form-check-label" required>I agree to terms and conditions</label>
+                    
+
+            </div>
+            <!-- Form button -->
+            <div class="form-group text-center my-5">
+                <button class="btn btn-info">Reset</button>
+                <button class="btn btn-info"> <span class="fa fa-address-card-o"></span> Submit</button>
+            </div>
+        </form>
+    </div>
+ </div>
+
+
